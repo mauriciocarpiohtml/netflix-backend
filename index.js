@@ -15,6 +15,10 @@ conectarDB()
 
 // RUTAS
 
+app.get('/', (req, res) => {
+  res.send('Hello from index')
+})
+
  app.use('/api/usuarios', usuario )
 
 const port = process.env.port
