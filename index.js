@@ -16,7 +16,7 @@ conectarDB()
 // RUTAS
 
 app.get('/', (req, res) => {
-  res.send('Hello from index')
+  res.json({msg:"Hola from index"})
 })
 
  app.use('/api/usuarios', usuario )
